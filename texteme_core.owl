@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://purl.org/textontology/texteme/texteme_core.owl#"
+	 xml:base="http://purl.org/textontology/texteme/texteme_core.owl#"
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<owl:Ontology rdf:about="">
+		<rdfs:comment xml:lang="en">This ontology defines the foundational classes and roles for text modelling: textemes and text properties. Most other ontologies, including the Unicode Ontology, are built on top of this one.</rdfs:comment>
+		<rdfs:comment xml:lang="en">This ontology is currently under active development, changes are still frequent.</rdfs:comment>
+		<owl:versionInfo>0.5.0</owl:versionInfo>
+	</owl:Ontology>
+
+	<owl:Class rdf:about="#Texteme"><rdfs:comment xml:lang="en">A Texteme is a concept that models a generic written symbol. As such, it is a generalization of the "character". Depending on the actual properties and relations that a texteme consists of, it may represent a character, a glyph, a linguistic grapheme, all of these, or neither of these.</rdfs:comment></owl:Class>
+
+	<owl:Class rdf:about="#TextProperty"><rdfs:comment xml:lang="en">A TextProperty is a property or relation that describes an element of digital text: a Texteme, a SequenceElement, or a Sequence.</rdfs:comment></owl:Class>
+
+	<owl:Class rdf:about="#TextemeProperty">
+		<rdfs:comment xml:lang="en">A TextemeProperty is a unary relation that describes a Texteme.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#TextProperty"/>
+	</owl:Class>
+<!--
+	<owl:Class rdf:about="#TextemeRelation">
+		<rdfs:comment xml:lang="en">A TextemeRelation is a non-unary relation between Textemes or Texteme sequences.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#TextProperty"/>
+	</owl:Class>
+-->
+	<owl:Class rdf:about="#MetaTextProperty">
+		<rdfs:comment xml:lang="en">A MetaTextProperty describes a TextProperty.</rdfs:comment>
+	</owl:Class>
+
+	<owl:ObjectProperty rdf:about="#hasTextProperty">
+	</owl:ObjectProperty>
+
+	<owl:ObjectProperty rdf:about="#hasMetaTextProperty">
+		<rdfs:domain rdf:resource="#TextProperty"/>
+	</owl:ObjectProperty>
+
+	<owl:ObjectProperty rdf:about="#hasTextemeProperty">
+		<rdfs:subPropertyOf rdf:resource="#hasTextProperty"/>
+		<rdfs:domain rdf:resource="#Texteme"/>
+	</owl:ObjectProperty>
+<!--
+	<owl:ObjectProperty rdf:about="#hasTextemeRelation">
+		<rdfs:subPropertyOf rdf:resource="#hasTextProperty"/>
+		<rdfs:domain rdf:resource="#Texteme"/>
+	</owl:ObjectProperty>
+-->
+
+	<owl:ObjectProperty rdf:about="#describesTexteme">
+		<owl:inverseOf rdf:resource="#hasTextemeProperty"/>
+	</owl:ObjectProperty>
+
+	<owl:SymmetricProperty rdf:about="#hasEquivalentSymbol">
+		<rdfs:comment xml:lang="en">Equivalence relation between individuals stating that they are supposed to represent the same written symbol. Any of the individuals can be of type Texteme, Sequence, UnicodeCharacter, etc.</rdfs:comment>
+		<rdf:type rdf:resource="&owl;TransitiveProperty"/>
+		<rdfs:subPropertyOf rdf:resource="#hasTextProperty"/>
+	</owl:SymmetricProperty>
+
+</rdf:RDF>
+

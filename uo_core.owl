@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+	<!ENTITY texteme "http://purl.org/textontology/texteme/texteme_core.owl#" >
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+	<!ENTITY seq "http://purl.org/textontology/texteme/sequence.owl#" >
+]>
+
+<rdf:RDF xmlns="http://purl.org/textontology/unicode/uo_core.owl#"
+	 xml:base="http://purl.org/textontology/unicode/uo_core.owl#"
+	 xmlns:texteme="http://purl.org/textontology/texteme/texteme_core.owl#"
+	 xmlns:seq="http://purl.org/textontology/texteme/sequence.owl#"
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<owl:Ontology rdf:about="">
+		<rdfs:comment xml:lang="en">Here we define the basic concepts used by the Unicode Ontology.</rdfs:comment>
+		<rdfs:comment xml:lang="en">This ontology is currently under active development, changes are still frequent.</rdfs:comment>
+		<owl:versionInfo>0.6.2</owl:versionInfo>
+		<owl:imports rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl"/>
+		<owl:imports rdf:resource="http://purl.org/textontology/texteme/sequence.owl"/>
+	</owl:Ontology>
+
+<!-- Unicode -->
+
+	<owl:Class rdf:about="#UnicodeCharacter">
+		<rdfs:comment xml:lang="en">A UnicodeCharacter is a Texteme that happens to hold exactly those properties and relations that describe a valid Unicode character.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="&texteme;Texteme"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="#UnicodeCharacterProperty">
+		<rdfs:comment xml:lang="en">Unicode character properties are described by the Unicode Standard and are part of the Unicode Character Database.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="&texteme;TextemeProperty"/>
+	</owl:Class>
+
+	<owl:ObjectProperty rdf:about="#hasUnicodeCharacterProperty">
+		<rdfs:domain rdf:resource="#UnicodeCharacter"/>
+		<rdfs:subPropertyOf rdf:resource="&texteme;hasTextemeProperty"/>
+	</owl:ObjectProperty>
+
+<!--
+	<owl:Class rdf:about="#UnicodeCharacterRelation">
+		<rdfs:comment xml:lang="en">Relations between Unicode sharacters are described by the Unicode Standard and are part of the Unicode Character Database.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="&texteme;TextemeRelation"/>
+	</owl:Class>
+	<owl:ObjectProperty rdf:about="#hasUnicodeCharacterRelation">
+		<rdfs:domain rdf:resource="#UnicodeCharacter"/>
+		<rdfs:subPropertyOf rdf:resource="&texteme;hasTextemeRelation"/>
+	</owl:ObjectProperty>
+-->
+
+	<owl:ObjectProperty rdf:about="#describesUnicodeCharacter">
+		<rdfs:subPropertyOf rdf:resource="&texteme;describesTexteme"/>
+		<owl:inverseOf rdf:resource="#hasUnicodeCharacterProperty"/>
+	</owl:ObjectProperty>
+
+	<owl:Class rdf:about="#UnicodeSequence">
+		<rdfs:subClassOf rdf:resource="&seq;Sequence"/>
+	</owl:Class>
+
+</rdf:RDF>
+

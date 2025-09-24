@@ -1,0 +1,712 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jackkausch/ontologies/2025/8/untitled-ontology-196#"
+     xml:base="http://www.semanticweb.org/jackkausch/ontologies/2025/8/untitled-ontology-196"
+     xmlns:hrp="http://realcharacterlanguage.world/horapollo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jackkausch/ontologies/2025/8/untitled-ontology-196"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#complementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#complementOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#intersectionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#intersectionOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#unionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#unionOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/E.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/E.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:label>Moon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/F.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/F.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Bird</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/I.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/I.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+        <rdfs:label>Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/J.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/J.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+        <rdfs:label>Cloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/L.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/L.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Leaf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/M.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/M.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Flower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/N.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/N.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Egg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/O.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/O.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+        <rdfs:label>Fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/Q.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/Q.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/R.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/R.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Tree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/S.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/S.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Z.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Feather</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/U.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/U.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:label>Sun</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/Y.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/Y.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/E.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/U.png"/>
+        <rdfs:label>Mountain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/Z.png -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/Z.png">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#complementOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/L.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/M.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/N.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/R.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/S.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/F.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+                <owl:allValuesFrom rdf:resource="http://realcharacterlanguage.world/horapollo/Q.png"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/I.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/J.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/O.png"/>
+        <rdfs:subClassOf rdf:resource="http://realcharacterlanguage.world/horapollo/Y.png"/>
+        <rdfs:label>Eye</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

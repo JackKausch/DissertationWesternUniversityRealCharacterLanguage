@@ -1,0 +1,2238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://realcharacterlanguage.world/horapollo/"
+     xml:base="http://realcharacterlanguage.world/horapollo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:uo="http://purl.org/textontology/unicode/uo_core.owl"
+     xmlns:hrp="http://realcharacterlanguage.world/horapollo/"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wdt="http://www.wikidata.org/wiki/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:uo_core="http://purl.org/textontology/unicode/uo_core.owl#"
+     xmlns:Property="http://wikidata.org/wiki/Property:"
+     xmlns:texteme_core="http://purl.org/textontology/texteme/texteme_core.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://realcharacterlanguage.world/horapollo/">
+        <owl:imports rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl"/>
+        <owl:imports rdf:resource="http://purl.org/textontology/unicode/uo_core.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+        <rdfs:comment>Official ontology for the Horapollo font. Makes use of vocabulary from Wikidata, Identifiers from CLLD and Phoible, and classes from the Unicode Ontology and Texteme Ontology.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/Name -->
+
+    <owl:AnnotationProperty rdf:about="http://realcharacterlanguage.world/horapollo/Name"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#backwardCompatibleWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#incompatibleWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NCName -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#NCName"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NMTOKEN -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Name -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#Name"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#base64Binary -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#byte -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#byte"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTimeStamp -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#hexBinary -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#language -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#language"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#long -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#negativeInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonPositiveInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#normalizedString -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#positiveInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#short -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#short"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#token -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#token"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedByte -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedInt -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedLong -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedShort -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wikidata.org/wiki/Property:P11473 -->
+
+    <owl:ObjectProperty rdf:about="http://wikidata.org/wiki/Property:P11473">
+        <rdfs:subPropertyOf rdf:resource="http://wikidata.org/wiki/Property:P11473"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#isSenseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wikidata.org/wiki/Property:P898 -->
+
+    <owl:ObjectProperty rdf:about="http://wikidata.org/wiki/Property:P898">
+        <rdfs:subPropertyOf rdf:resource="http://wikidata.org/wiki/Property:P898"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isSenseOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isSenseOf">
+        <owl:inverseOf rdf:resource="http://www.wikidata.org/wiki/Property:P11473"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.wikidata.org/wiki/Property:P11473 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/wiki/Property:P11473">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>Describes which concept set in the CLLD concepticon a Real Character belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/wiki/Property:P898 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/wiki/Property:P898">
+        <rdfs:comment>Describes which IPA character/phoneme a real character corresponds to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/textontology/texteme/texteme_core.owl#Texteme -->
+
+    <owl:Class rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter -->
+
+    <owl:Class rdf:about="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/RealCharacter -->
+
+    <owl:Class rdf:about="http://realcharacterlanguage.world/horapollo/RealCharacter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/A.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/A.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0041"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131FD"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2B50"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1430"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/72FB536ACFF408163656BBCDAFCAC6F6"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STAR</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⭐</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇽</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/B.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/B.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0042"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F443"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13089"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1221"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/694212B746622E482E0E58D50036100E"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOSE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂉</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👃</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/C.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/C.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0043"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F446"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/130B7"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1303"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/1348048F53951A5E29ABA6D5360925BA"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FINGER</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂷</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👆</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/D.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/D.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0044"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F444"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1308B"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/674"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/E6253384902D489FDB1FE487B7ED4AB2"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOUTH</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂋</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👄</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/E.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/E.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0045"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F319"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F9"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1313"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/199408E3D0668F10F475143F0E8CC0CB"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOON</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇹</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌙</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/F.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/F.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0046"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F426"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13143"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/937"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/86E80A7DA80F7F58CA76F85BACA48F86"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIRD</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓅃</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🐦</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/G.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/G.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0047"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F443"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13089"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1221"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/ECC959553F23387998DAF88D69D7736C"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOSE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂉</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👃</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/H.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/H.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0048"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F476"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13014"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1289"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/E7FBD92350B3CA8B7B5D77E36A607068"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BABY</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓀔</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👶</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/I.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/I.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0049"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F30A"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13217"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/948"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/F0585BB57111C322D6E7DABB0D01F9EA"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WATER</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓈗</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌊</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/J.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/J.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004A"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131EF"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2601"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1489"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/ADF56B8E4119266843033E723A149AE2"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLOUD</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">☁️</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇯</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/K.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/K.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004B"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F442"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13088"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1247"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/5A838FF4DABE1950734CFAFAB9383903"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAR</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂈</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👂</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/L.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/L.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004C"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F341"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13114"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/628"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/03413638BD1DFC7AEF53192FEF71F017"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEAF</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄔</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🍁</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/M.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/M.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004D"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F33C"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131B8"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/239"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/5AE9663626770D1D4B97AAE5769AB83C"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLOWER</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆸</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌼</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/N.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/N.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004E"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F95A"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13187"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/744"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/E03DA215BAB0A158BA5D1CB5C4D5D6FD"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EGG</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆇</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🥚</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/O.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/O.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004F"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F525"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/132AE"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/221"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/5AC0158A367D59E8C16A876321E578AB"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIRE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓊮</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🔥</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/P.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/P.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0050"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9B6"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/130C0"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1301"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/2D6FB64B3CDC3549EF11DB98A66A9EAD"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FOOT</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓃀</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🦶</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Q.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Q.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0051"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F420"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1319B"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/227"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/941ED37AAF5E9C4E1B40D85008C6B2D9"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FISH</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆛</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🐠</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/R.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/R.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0052"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F333"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131AD"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/906"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/5D1D7FB69E1A3C0C60001FBC0C19ED87"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TREE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆭</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌳</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/S.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/S.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0053"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1FAB6"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13184"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1201"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/7FF174469DAC4E61520F4E1610B2F088"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEATHER</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆄</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🪶</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/T.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/T.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0054"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F445"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13113"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1205"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/9F90F95459807624A486F03FE5A89978"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TONGUE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄓</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👅</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/U.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/U.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0055"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F3"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2600"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1343"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/58EB693AE523323410326D60806B9ADF"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUN</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">☀️</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇳</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/V.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/V.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0056"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9CD"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13050"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/683"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/9E7CDEEE9F0DE43C10181AE483F62CBD"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓁐,𓀀</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🧍</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/W.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/W.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0057"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F0"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/26A1"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1654"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/501394D0E2658752D9DA624E7DEBE14B"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGHTNING</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⚡</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇰</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/X.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/X.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0058"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9B4"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1312F"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1394"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/0844E3AEAF1C8E3837465942B92FE4C5"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BONE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄯</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🦴</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Y.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Y.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0059"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13209"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/26F0"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/639"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/8A61A9B6039DB852CE150BEC6198AFE5"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOUNTAIN</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⛰️</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓈉</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Z.png -->
+
+    <owl:NamedIndividual rdf:about="file:/Users/jackkausch/Documents/Technical/path_to_lab2_venv/lib/python3.9/site-packages/realcharacterlanguage.world/horapollo/Z.png">
+        <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+        <texteme_core:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/005A"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F441"/>
+        <uo_core:describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13079"/>
+        <Property:P11473 rdf:resource="https://concepticon.clld.org/parameters/1248"/>
+        <Property:P898 rdf:resource="https://phoible.org/parameters/1AD6D96C35E6ADA62F1EAF5B167F75F7"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EYE</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓁹</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👁️</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/texteme/texteme_core.owl#Texteme -->
+
+    <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    
+
+
+    <!-- http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme -->
+
+    <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme"/>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004A">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004B -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004B">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004C -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004C">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004D -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004D">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004E -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004E">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/004F -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/004F">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0041 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0041">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0042 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0042">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0043">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0044 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0044">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0045 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0045">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0046 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0046">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0047 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0047">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0048 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0048">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0049 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0049">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/005A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/005A">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0050 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0050">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0051 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0051">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0052 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0052">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0053 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0053">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0054 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0054">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0055 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0055">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0056 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0056">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0057 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0057">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0058 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0058">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/0059 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/0059">
+        <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F30A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F30A">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F319 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F319">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F333 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F333">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F33C -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F33C">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F341 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F341">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F420 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F420">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F426 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F426">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F441 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F441">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F442 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F442">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F443 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F443">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F444 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F444">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F445 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F445">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F446 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F446">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F476 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F476">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F525 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F525">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F95A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F95A">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F9B4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F9B4">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F9B6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F9B6">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1F9CD -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1F9CD">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1FAB6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1FAB6">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/130B7 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/130B7">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/130C0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/130C0">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13014">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13050 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13050">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13079 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13079">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1308B -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1308B">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13088 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13088">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13089 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13089">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131AD -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131AD">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131B8 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131B8">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131EF -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131EF">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131F0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131F0">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131F3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131F3">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131F9 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131F9">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/131FD -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/131FD">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13113 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13113">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13114 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13114">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1312F -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1312F">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13143 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13143">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13184 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13184">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13187 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13187">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/1319B -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/1319B">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/132AE -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/132AE">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13209 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13209">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/13217 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/13217">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/2B50 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/2B50">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/26A1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/26A1">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/26F0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/26F0">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/2600 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/2600">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/char/2601 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/textontology/unicode/char/2601">
+        <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter -->
+
+    <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    
+
+
+    <!-- http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter -->
+
+    <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter"/>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/Name -->
+
+    <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/Name"/>
+    
+
+
+    <!-- http://realcharacterlanguage.world/horapollo/RealCharacter -->
+
+    <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    
+
+
+    <!-- http://wikidata.org/wiki/Property:P11473 -->
+
+    <rdf:Description rdf:about="http://wikidata.org/wiki/Property:P11473"/>
+    
+
+
+    <!-- http://wikidata.org/wiki/Property:P898 -->
+
+    <rdf:Description rdf:about="http://wikidata.org/wiki/Property:P898"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Datatype -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subPropertyOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NCName -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NCName"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NMTOKEN -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Name -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#Name"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#base64Binary -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#byte -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#byte"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTimeStamp -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#hexBinary -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#language -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#language"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#long -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#negativeInteger -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonPositiveInteger -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#normalizedString -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#positiveInteger -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#short -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#short"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#token -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#token"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedByte -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedInt -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedLong -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedShort -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#AnnotationProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#backwardCompatibleWith -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#incompatibleWith -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1201 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1201"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1205 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1205"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1221 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1221"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1247 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1247"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1248 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1248"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1289 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1289"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1301 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1301"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1303 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1303"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1313 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1313"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1343 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1343"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1394 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1394"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1430 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1430"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1489 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1489"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/1654 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/1654"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/221 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/221"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/227 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/227"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/239 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/239"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/628 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/628"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/639 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/639"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/674 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/674"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/683 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/683"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/744 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/744"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/906 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/906"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/937 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/937"/>
+    
+
+
+    <!-- https://concepticon.clld.org/parameters/948 -->
+
+    <rdf:Description rdf:about="https://concepticon.clld.org/parameters/948"/>
+    
+
+
+    <!-- https://phoible.org/parameters/ADF56B8E4119266843033E723A149AE2 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/ADF56B8E4119266843033E723A149AE2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/E03DA215BAB0A158BA5D1CB5C4D5D6FD -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/E03DA215BAB0A158BA5D1CB5C4D5D6FD">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/E6253384902D489FDB1FE487B7ED4AB2 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/E6253384902D489FDB1FE487B7ED4AB2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/E7FBD92350B3CA8B7B5D77E36A607068 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/E7FBD92350B3CA8B7B5D77E36A607068">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/ECC959553F23387998DAF88D69D7736C -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/ECC959553F23387998DAF88D69D7736C">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/F0585BB57111C322D6E7DABB0D01F9EA -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/F0585BB57111C322D6E7DABB0D01F9EA">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/03413638BD1DFC7AEF53192FEF71F017 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/03413638BD1DFC7AEF53192FEF71F017">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/0844E3AEAF1C8E3837465942B92FE4C5 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/0844E3AEAF1C8E3837465942B92FE4C5">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/1AD6D96C35E6ADA62F1EAF5B167F75F7 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/1AD6D96C35E6ADA62F1EAF5B167F75F7">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/1348048F53951A5E29ABA6D5360925BA -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/1348048F53951A5E29ABA6D5360925BA">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/199408E3D0668F10F475143F0E8CC0CB -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/199408E3D0668F10F475143F0E8CC0CB">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/2D6FB64B3CDC3549EF11DB98A66A9EAD -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/2D6FB64B3CDC3549EF11DB98A66A9EAD">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/5A838FF4DABE1950734CFAFAB9383903 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/5A838FF4DABE1950734CFAFAB9383903">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/5AC0158A367D59E8C16A876321E578AB -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/5AC0158A367D59E8C16A876321E578AB">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/5AE9663626770D1D4B97AAE5769AB83C -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/5AE9663626770D1D4B97AAE5769AB83C">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/5D1D7FB69E1A3C0C60001FBC0C19ED87 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/5D1D7FB69E1A3C0C60001FBC0C19ED87">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/501394D0E2658752D9DA624E7DEBE14B -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/501394D0E2658752D9DA624E7DEBE14B">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/58EB693AE523323410326D60806B9ADF -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/58EB693AE523323410326D60806B9ADF">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/694212B746622E482E0E58D50036100E -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/694212B746622E482E0E58D50036100E">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/7FF174469DAC4E61520F4E1610B2F088 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/7FF174469DAC4E61520F4E1610B2F088">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/72FB536ACFF408163656BBCDAFCAC6F6 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/72FB536ACFF408163656BBCDAFCAC6F6">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/8A61A9B6039DB852CE150BEC6198AFE5 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/8A61A9B6039DB852CE150BEC6198AFE5">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/86E80A7DA80F7F58CA76F85BACA48F86 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/86E80A7DA80F7F58CA76F85BACA48F86">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/9E7CDEEE9F0DE43C10181AE483F62CBD -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/9E7CDEEE9F0DE43C10181AE483F62CBD">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/9F90F95459807624A486F03FE5A89978 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/9F90F95459807624A486F03FE5A89978">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://phoible.org/parameters/941ED37AAF5E9C4E1B40D85008C6B2D9 -->
+
+    <owl:NamedIndividual rdf:about="https://phoible.org/parameters/941ED37AAF5E9C4E1B40D85008C6B2D9">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

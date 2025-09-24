@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://purl.org/textontology/unicode/uo_core.owl#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:hrp="http://realcharacterlanguage.world/horapollo/"
+   xmlns:ns1="http://wikidata.org/wiki/Property:"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:texteme="http://purl.org/textontology/texteme/texteme_core.owl#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#morphologicalPattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">morfologiese patroon</rdfs:label>
+    <rdfs:label xml:lang="de">morphologisches Muster</rdfs:label>
+    <rdfs:label xml:lang="en">morphological pattern</rdfs:label>
+    <rdfs:label xml:lang="es">patrón morfológico</rdfs:label>
+    <rdfs:label xml:lang="fr">patron morphologique</rdfs:label>
+    <rdfs:label xml:lang="it">motivo morfologico</rdfs:label>
+    <rdfs:label xml:lang="nl">morfologische patroon</rdfs:label>
+    <rdfs:label xml:lang="ro">model morfologic</rdfs:label>
+    <rdfs:label xml:lang="sv">morfologiskt mönster</rdfs:label>
+    <rdfs:label xml:lang="ru">морфологическая модель</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'morphological pattern' property indicates the morphological class of a word.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'морфологическая модель' обозначает морфологический класс слова.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#representation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="af">voorstelling</rdfs:label>
+    <rdfs:label xml:lang="de">Darstellung</rdfs:label>
+    <rdfs:label xml:lang="en">representation</rdfs:label>
+    <rdfs:label xml:lang="es">representación</rdfs:label>
+    <rdfs:label xml:lang="fr">représentation</rdfs:label>
+    <rdfs:label xml:lang="it">rappresentazione</rdfs:label>
+    <rdfs:label xml:lang="nl">representatie</rdfs:label>
+    <rdfs:label xml:lang="pt">representação</rdfs:label>
+    <rdfs:label xml:lang="ro">reprezentare</rdfs:label>
+    <rdfs:label xml:lang="sv">representation</rdfs:label>
+    <rdfs:label xml:lang="ru">представление</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'representation' property indicates a string by which the form is represented according to some orthography. </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'представление' обозначает некую последовательность, с помощью которой форма может быть представлена средствами орфографии.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-10</dc:modified>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-10</dc:issued>
+    <vann:preferredNamespacePrefix>ontolex</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/lemon/ontolex#</vann:preferredNamespaceUri>
+    <dc:rights>CC-Zero</dc:rights>
+    <dc:description xml:lang="en">A model for the representation of lexical information relative to ontologies. Core module.</dc:description>
+    <dc:title xml:lang="en">Lexicon Model for Ontologies - Core</dc:title>
+    <dc:contributor rdf:resource="http://art.uniroma2.it/fiorelli/"/>
+    <dc:contributor rdf:resource="http://art.uniroma2.it/stellato/"/>
+    <dc:contributor rdf:resource="http://jogracia.url.ph/web/"/>
+    <dc:contributor rdf:resource="http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/teachers/52-emontiel"/>
+    <dc:contributor rdf:resource="http://www.dfki.de/~declerck/"/>
+    <dc:contributor rdf:resource="http://www.ilc.cnr.it/en/content/anas-fahad-khan"/>
+    <dc:contributor rdf:resource="http://www.istc.cnr.it/people/aldo-gangemi"/>
+    <dc:contributor rdf:resource="http://www.oeg-upm.net/index.php/teachers/53-lupe"/>
+    <dc:contributor rdf:resource="http://www.paulbuitelaar.net/"/>
+    <dc:contributor rdf:resource="https://sites.google.com/site/francescafrontini/"/>
+    <dc:creator rdf:resource="http://john.mccr.ae/"/>
+    <dc:creator rdf:resource="http://www.cimiano.de/"/>
+    <dc:publisher rdf:resource="http://www.w3.org/community/ontolex"/>
+    <cc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+    <rdfs:comment xml:lang="en">-Version 1.0: depreciation with minor change in metadata for LOV publication
+-Version 1.1: creation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#Affix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">affiks</rdfs:label>
+    <rdfs:label xml:lang="de">Affix</rdfs:label>
+    <rdfs:label xml:lang="en">affix</rdfs:label>
+    <rdfs:label xml:lang="es">afijo</rdfs:label>
+    <rdfs:label xml:lang="fr">affixe</rdfs:label>
+    <rdfs:label xml:lang="it">affisso</rdfs:label>
+    <rdfs:label xml:lang="nl">affix</rdfs:label>
+    <rdfs:label xml:lang="ro">aplică</rdfs:label>
+    <rdfs:label xml:lang="sv">affix</rdfs:label>
+    <rdfs:label xml:lang="ru">аффикс</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">An affix is a lexical entry that represents a morpheme (suffix, prefix, infix, circumfix) that is attached to a word stem to form a new word.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Аффикс' - это словарная единица, которая представляет морфему (суффикс, префикс, инфикс, циркумфикс), добавляемую к основе слова для образования нового слова.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#hasEquivalentSymbol">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:comment xml:lang="en">Equivalence relation between individuals stating that they are supposed to represent the same written symbol. Any of the individuals can be of type Texteme, Sequence, UnicodeCharacter, etc.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#hasTextProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/F.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/937"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/86E80A7DA80F7F58CA76F85BACA48F86"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F426"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13143"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0046"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓅃</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🐦</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIRD</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#MetaTextProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A MetaTextProperty describes a TextProperty.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/S.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1201"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/7FF174469DAC4E61520F4E1610B2F088"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1FAB6"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13184"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0053"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆄</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🪶</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEATHER</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/Q.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/227"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/941ED37AAF5E9C4E1B40D85008C6B2D9"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F420"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1319B"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0051"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆛</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🐠</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FISH</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/A.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1430"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/72FB536ACFF408163656BBCDAFCAC6F6"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2B50"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131FD"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0041"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇽</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⭐</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STAR</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/T.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1205"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/9F90F95459807624A486F03FE5A89978"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F445"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13113"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0054"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄓</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👅</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TONGUE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#Form">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">vorm</rdfs:label>
+    <rdfs:label xml:lang="de">Form</rdfs:label>
+    <rdfs:label xml:lang="en">form</rdfs:label>
+    <rdfs:label xml:lang="es">forma</rdfs:label>
+    <rdfs:label xml:lang="fr">forme</rdfs:label>
+    <rdfs:label xml:lang="it">forma</rdfs:label>
+    <rdfs:label xml:lang="nl">vorm</rdfs:label>
+    <rdfs:label xml:lang="pt">Forma</rdfs:label>
+    <rdfs:label xml:lang="ro">formă</rdfs:label>
+    <rdfs:label xml:lang="sv">form</rdfs:label>
+    <rdfs:label xml:lang="ru">форма</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="Neebe014998fd497d8e8cc59168fc604a"/>
+    <rdfs:comment xml:lang="en">A form represents one grammatical realization of a lexical entry.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Форма' представляет одну грамматическую реализацию словарной единицы.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N432133406e65429e93bb0baef97a9185">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#sense"/>
+    <rdf:rest rdf:nodeID="N90210a7c02d84aedb98744b4f2eeab49"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F333">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#evokes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">roep op</rdfs:label>
+    <rdfs:label xml:lang="de">ruft hervor</rdfs:label>
+    <rdfs:label xml:lang="en">evokes</rdfs:label>
+    <rdfs:label xml:lang="es">evoca</rdfs:label>
+    <rdfs:label xml:lang="fr">évoque</rdfs:label>
+    <rdfs:label xml:lang="it">evoca</rdfs:label>
+    <rdfs:label xml:lang="nl">roept op</rdfs:label>
+    <rdfs:label xml:lang="pt">evoca</rdfs:label>
+    <rdfs:label xml:lang="ro">evocă</rdfs:label>
+    <rdfs:label xml:lang="sv">framkallar</rdfs:label>
+    <rdfs:label xml:lang="ru">порождает</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'evokes' property relates a lexical entry to one of the lexical concepts it evokes, i.e. the mental concept that speakers of a language might associate when hearing the lexical entry.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'порождает' связывает словарную единицу с одним из лексических понятий, которую она порождает, то есть мыслительное понятие, которое возникает в сознании говорящих, когда они слышат данную словарную единицу.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <owl:propertyChainAxiom rdf:nodeID="N4dbd64241a1148359a7778ebafc7088f"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#phoneticRep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="af">fonetiese voorstelling</rdfs:label>
+    <rdfs:label xml:lang="de">phonetische Darstellung</rdfs:label>
+    <rdfs:label xml:lang="en">phonetic representation</rdfs:label>
+    <rdfs:label xml:lang="es">representación fonética</rdfs:label>
+    <rdfs:label xml:lang="fr">représentation phonétique</rdfs:label>
+    <rdfs:label xml:lang="it">rappresentazione fonetica</rdfs:label>
+    <rdfs:label xml:lang="nl">fonetische representatie</rdfs:label>
+    <rdfs:label xml:lang="ro">reprezentare fonetică</rdfs:label>
+    <rdfs:label xml:lang="sv">fonetisk representation </rdfs:label>
+    <rdfs:label xml:lang="ru">фонетическое представление</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'phonetic representation' property indicates one phonetic representation of the pronunciation of the form using a scheme such as the International Phonetic Alphabet (IPA). </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'фонетическое представление' обозначает фонетическое представление произношения формы с использованием какой-либо схемы, например, Международного фонетического алфавита (IPA, МФА).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#representation"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/W.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1654"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/501394D0E2658752D9DA624E7DEBE14B"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/26A1"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F0"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0057"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇰</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⚡</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGHTNING</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/E6253384902D489FDB1FE487B7ED4AB2">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">expression</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf54726535bb6494bae1b1ca9d5cdfeb7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#reference"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/E03DA215BAB0A158BA5D1CB5C4D5D6FD">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">konsep</rdfs:label>
+    <rdfs:label xml:lang="de">Konzept</rdfs:label>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
+    <rdfs:label xml:lang="es">concepto</rdfs:label>
+    <rdfs:label xml:lang="fr">concept</rdfs:label>
+    <rdfs:label xml:lang="it">concetto</rdfs:label>
+    <rdfs:label xml:lang="nl">begrip</rdfs:label>
+    <rdfs:label xml:lang="pt">conceito</rdfs:label>
+    <rdfs:label xml:lang="ro">concept</rdfs:label>
+    <rdfs:label xml:lang="sv">begrepp</rdfs:label>
+    <rdfs:label xml:lang="ru">понятие</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'concept' property relates an ontological entity to a lexical concept that represents the corresponding meaning.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'понятие' связывает сущность в онтологии с лексическим понятием, которое представляет соответствующее значение.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#isConceptOf"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isEvokedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">word opgeroep deur</rdfs:label>
+    <rdfs:label xml:lang="de">wird hervorgerufen von</rdfs:label>
+    <rdfs:label xml:lang="en">is evoked by</rdfs:label>
+    <rdfs:label xml:lang="es">es evocado por</rdfs:label>
+    <rdfs:label xml:lang="fr">est évoqué par</rdfs:label>
+    <rdfs:label xml:lang="it">è evocato da</rdfs:label>
+    <rdfs:label xml:lang="nl">wordt opgeroepen door</rdfs:label>
+    <rdfs:label xml:lang="ro">este evocat de</rdfs:label>
+    <rdfs:label xml:lang="sv">framkallas av </rdfs:label>
+    <rdfs:label xml:lang="ru">порождается</rdfs:label>
+    <rdfs:comment xml:lang="en">The inverse relation to evokes.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Отношение обратное к 'порождает'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#evokes"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/P.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1301"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/2D6FB64B3CDC3549EF11DB98A66A9EAD"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9B6"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/130C0"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0050"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓃀</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🦶</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FOOT</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#TextemeProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A TextemeProperty is a unary relation that describes a Texteme.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#TextProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">is geleksikaliseerde sin van</rdfs:label>
+    <rdfs:label xml:lang="de">ist lexikalisierter Sinn von</rdfs:label>
+    <rdfs:label xml:lang="en">is lexicalized sense of</rdfs:label>
+    <rdfs:label xml:lang="es">es l'acepción lexicalizado de</rdfs:label>
+    <rdfs:label xml:lang="fr">est le sens lexicalisé de</rdfs:label>
+    <rdfs:label xml:lang="it">è il senso lessicalizzato di</rdfs:label>
+    <rdfs:label xml:lang="nl">is lexikale betekenis van</rdfs:label>
+    <rdfs:label xml:lang="ro">este sens lexicalizat de</rdfs:label>
+    <rdfs:label xml:lang="sv">är lexikaliserad betydelse för</rdfs:label>
+    <rdfs:label xml:lang="ru">является лексикализованным смыслом</rdfs:label>
+    <rdfs:comment xml:lang="en">The object property isLexicalizedSenseOf is the inverse property of lexicalized sense.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство объекта 'является лексикализованным смыслом' представляет собой свойство, обратное к свойству 'лексикализованный смысл'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#lexicalizedSense"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isSenseOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="af">is sin van</rdfs:label>
+    <rdfs:label xml:lang="de">ist Sinn von</rdfs:label>
+    <rdfs:label xml:lang="en">is sense of</rdfs:label>
+    <rdfs:label xml:lang="es">es acepción de</rdfs:label>
+    <rdfs:label xml:lang="fr">est signification de</rdfs:label>
+    <rdfs:label xml:lang="it">è il senso di</rdfs:label>
+    <rdfs:label xml:lang="nl">is betekenis van</rdfs:label>
+    <rdfs:label xml:lang="pt">é sentido de</rdfs:label>
+    <rdfs:label xml:lang="ro">este sens a(l)</rdfs:label>
+    <rdfs:label xml:lang="sv">är betydelse för</rdfs:label>
+    <rdfs:label xml:lang="ru">является смыслом</rdfs:label>
+    <rdfs:comment xml:lang="en">The property isSenseOf is the inverse property of sense.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'является смыслом' представляет собой свойство, обратное к свойству 'смысл'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/X.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1394"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/0844E3AEAF1C8E3837465942B92FE4C5"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9B4"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1312F"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0058"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄯</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🦴</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BONE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#sense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:label xml:lang="af">sinne</rdfs:label>
+    <rdfs:label xml:lang="de">Sinn</rdfs:label>
+    <rdfs:label xml:lang="en">sense</rdfs:label>
+    <rdfs:label xml:lang="es">acepción</rdfs:label>
+    <rdfs:label xml:lang="fr">signification</rdfs:label>
+    <rdfs:label xml:lang="it">senso</rdfs:label>
+    <rdfs:label xml:lang="nl">betekenis</rdfs:label>
+    <rdfs:label xml:lang="pt">sentido</rdfs:label>
+    <rdfs:label xml:lang="ro">sens</rdfs:label>
+    <rdfs:label xml:lang="sv">betydelse</rdfs:label>
+    <rdfs:label xml:lang="ru">смысл</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'sense' property relates a lexical entry to one of its lexical senses. </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'смысл' связывает словарную единицу с одним из ее лексических смыслов.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#isSenseOf"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#canonicalForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="af">kanoniese vorm</rdfs:label>
+    <rdfs:label xml:lang="de">kanonische Form</rdfs:label>
+    <rdfs:label xml:lang="en">canonical form</rdfs:label>
+    <rdfs:label xml:lang="es">forma canónica</rdfs:label>
+    <rdfs:label xml:lang="fr">forme canonique</rdfs:label>
+    <rdfs:label xml:lang="it">forma canonica</rdfs:label>
+    <rdfs:label xml:lang="nl">canonieke vorm</rdfs:label>
+    <rdfs:label xml:lang="pt">forma canonica</rdfs:label>
+    <rdfs:label xml:lang="ro">formă canonică</rdfs:label>
+    <rdfs:label xml:lang="sv">kanonisk form </rdfs:label>
+    <rdfs:label xml:lang="ru">каноническая форма</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'canonical form' property relates a lexical entry to its canoncical or dictionary form. This usually indicates the "lemma" form of a lexical entry. </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'каноническая форма' связывает словарную единицу с ее канонической или словарной формой. Она обычно обозначает "лемму" словарной единицы.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#lexicalForm"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">This ontology defines the foundational classes and roles for text modelling: textemes and text properties. Most other ontologies, including the Unicode Ontology, are built on top of this one.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This ontology is currently under active development, changes are still frequent.</rdfs:comment>
+    <owl:versionInfo>0.5.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">leksikale konsep</rdfs:label>
+    <rdfs:label xml:lang="de">lexikalisches Konzept</rdfs:label>
+    <rdfs:label xml:lang="en">lexical concept</rdfs:label>
+    <rdfs:label xml:lang="es">concepto lexicalizado</rdfs:label>
+    <rdfs:label xml:lang="fr">concept lexical</rdfs:label>
+    <rdfs:label xml:lang="it">concetto lessicale</rdfs:label>
+    <rdfs:label xml:lang="nl">lexikaal begrip</rdfs:label>
+    <rdfs:label xml:lang="pt">conceito léxico</rdfs:label>
+    <rdfs:label xml:lang="ro">concept lexical</rdfs:label>
+    <rdfs:label xml:lang="sv">lexikaliskt begrepp</rdfs:label>
+    <rdfs:label xml:lang="ru">лексическое понятие</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">A lexical concept represents a mental abstraction, concept or unit of thought that embodies the meaning of one or more lexical entries.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Лексическое понятие' представляет элемент абстрактного мышления, понятие или единицу мысли, которая может быть лексикализована определенным набором смыслов.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/1348048F53951A5E29ABA6D5360925BA">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#writtenRep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="af">geskrewe voorstelling</rdfs:label>
+    <rdfs:label xml:lang="de">schriftliche Darstellung</rdfs:label>
+    <rdfs:label xml:lang="en">written representation</rdfs:label>
+    <rdfs:label xml:lang="es">representación escrita</rdfs:label>
+    <rdfs:label xml:lang="fr">représentation écrite</rdfs:label>
+    <rdfs:label xml:lang="it">rappresentazione scritta</rdfs:label>
+    <rdfs:label xml:lang="nl">schriftelijke representatie</rdfs:label>
+    <rdfs:label xml:lang="pt">representação escrita</rdfs:label>
+    <rdfs:label xml:lang="ro">reprezentare scrisă</rdfs:label>
+    <rdfs:label xml:lang="sv">skriven form </rdfs:label>
+    <rdfs:label xml:lang="ru">письменное представление</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'written representation' property indicates the written representation of a form.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'письменное представление' обозначает письменное представление формы.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#representation"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl"/>
+    <owl:imports rdf:resource="http://purl.org/textontology/unicode/uo_core.owl"/>
+    <rdfs:comment>Official ontology for the Horapollo font. Makes use of vocabulary from Wikidata, Identifiers from CLLD and Phoible, and classes from the Unicode Ontology and Texteme Ontology.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isDenotedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">word aangedui deur</rdfs:label>
+    <rdfs:label xml:lang="de">wird bezeichnet von</rdfs:label>
+    <rdfs:label xml:lang="en">is denoted by</rdfs:label>
+    <rdfs:label xml:lang="es">es denotado por</rdfs:label>
+    <rdfs:label xml:lang="fr">est dénoté par</rdfs:label>
+    <rdfs:label xml:lang="it">è denotato da</rdfs:label>
+    <rdfs:label xml:lang="nl">wordt aangeduid door</rdfs:label>
+    <rdfs:label xml:lang="pt">é denotado por</rdfs:label>
+    <rdfs:label xml:lang="ro">este denotat cu</rdfs:label>
+    <rdfs:label xml:lang="sv">betecknas av</rdfs:label>
+    <rdfs:label xml:lang="ru">обозначается</rdfs:label>
+    <rdfs:comment xml:lang="en">The object property isDenotedBy is the inverse of the object property denotes.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство объекта 'обозначается' является обратным к свойству объекта 'обозначает'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#denotes"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalSense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">leksikale sin</rdfs:label>
+    <rdfs:label xml:lang="de">lexikalischer Sinn</rdfs:label>
+    <rdfs:label xml:lang="en">lexical sense</rdfs:label>
+    <rdfs:label xml:lang="es">acepción léxica</rdfs:label>
+    <rdfs:label xml:lang="fr">signification lexicale</rdfs:label>
+    <rdfs:label xml:lang="it">senso lessicale</rdfs:label>
+    <rdfs:label xml:lang="nl">lexikale betekenis</rdfs:label>
+    <rdfs:label xml:lang="ro">sens lexical</rdfs:label>
+    <rdfs:label xml:lang="sv">lexikonbetydelse</rdfs:label>
+    <rdfs:label xml:lang="ru">лексический смысл</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning"/>
+    <rdfs:subClassOf rdf:nodeID="Nfa2c64b3d94748dcaafce0d785236fa5"/>
+    <rdfs:subClassOf rdf:nodeID="Nf54726535bb6494bae1b1ca9d5cdfeb7"/>
+    <rdfs:comment xml:lang="en">A lexical sense represents the lexical meaning of a lexical entry when interpreted as referring to the corresponding ontology element. A lexical sense thus represents a reification of a pair of a uniquely determined lexical entry and a uniquely determined ontology entity it refers to. A link between a lexical entry and an ontology entity via a Lexical Sense object implies that the lexical entry can be used to refer to the ontology entity in question.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Лексический смысл' обозначает лексическое значение словарной единицы, когда оно понимается как относящееся к соответствующему элементу онтологии. 'Лексический смысл' представляет собой овеществление пары, состоящей из однозначно определяемой словарной единицы и однозначно определяемой сущности отнологии, к которой относится данный лексический смысл. Связь между словарной единицей и сущностью в онтологии посредством объекта 'Лексический Смысл' подразумевает, что словарная статья может быть использована для отсылки к соответствующей сущности в онтологии.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F446">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/K.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1247"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/5A838FF4DABE1950734CFAFAB9383903"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F442"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13088"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004B"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂈</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👂</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAR</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F426">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/Z.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1248"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/1AD6D96C35E6ADA62F1EAF5B167F75F7"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F441"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13079"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/005A"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓁹</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👁️</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EYE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#Word">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">woord</rdfs:label>
+    <rdfs:label xml:lang="de">Wort</rdfs:label>
+    <rdfs:label xml:lang="en">word</rdfs:label>
+    <rdfs:label xml:lang="es">palabra</rdfs:label>
+    <rdfs:label xml:lang="fr">mot</rdfs:label>
+    <rdfs:label xml:lang="it">parola</rdfs:label>
+    <rdfs:label xml:lang="nl">woord</rdfs:label>
+    <rdfs:label xml:lang="ro">cuvânt</rdfs:label>
+    <rdfs:label xml:lang="sv">ord</rdfs:label>
+    <rdfs:label xml:lang="ru">слово</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">A word is a lexical entry that consists of a single token.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Слово' - это словарная единица, представяющая собой единичную реализацию лексемы.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isReferenceOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:label xml:lang="af">is verwysing van</rdfs:label>
+    <rdfs:label xml:lang="de">ist Referenz von</rdfs:label>
+    <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    <rdfs:label xml:lang="es">es referencia de</rdfs:label>
+    <rdfs:label xml:lang="fr">est référence de</rdfs:label>
+    <rdfs:label xml:lang="it">è riferimento di</rdfs:label>
+    <rdfs:label xml:lang="nl">is referentie van</rdfs:label>
+    <rdfs:label xml:lang="pt">é referência de</rdfs:label>
+    <rdfs:label xml:lang="ro">este referință a(l)</rdfs:label>
+    <rdfs:label xml:lang="sv">är referens för</rdfs:label>
+    <rdfs:label xml:lang="ru">является референцией</rdfs:label>
+    <rdfs:comment xml:lang="en">The object property isReferenceOf is the inverse property of reference.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство объекта 'является референцией' представляет собой свойство, обратное к свойству 'референция'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#reference"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:nodeID="Ncff4d8f70caa418ab221964b3076d277"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#hasTextemeProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#hasTextProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#otherForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">ander form</rdfs:label>
+    <rdfs:label xml:lang="de">andere Form</rdfs:label>
+    <rdfs:label xml:lang="en">other form</rdfs:label>
+    <rdfs:label xml:lang="es">otra forma</rdfs:label>
+    <rdfs:label xml:lang="fr">autre forme</rdfs:label>
+    <rdfs:label xml:lang="it">altra forma</rdfs:label>
+    <rdfs:label xml:lang="nl">andere vorm</rdfs:label>
+    <rdfs:label xml:lang="pt">outra forma</rdfs:label>
+    <rdfs:label xml:lang="ro">altă formă</rdfs:label>
+    <rdfs:label xml:lang="sv">annan form</rdfs:label>
+    <rdfs:label xml:lang="ru">другая форма</rdfs:label>
+    <rdfs:comment xml:lang="en">The  'other form' property relates a lexical entry to a non-preferred ("non-lemma") form that realizes the given lexical entry.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'другая форма' связывает словарную единицу с малоупотребительной формой ("не леммой"), которая является реализацией данной словарной единицы</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#lexicalForm"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A UnicodeCharacter is a Texteme that happens to hold exactly those properties and relations that describe a valid Unicode character.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/270B">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neebe014998fd497d8e8cc59168fc604a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#writtenRep"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F319">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/0844E3AEAF1C8E3837465942B92FE4C5">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0047">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0054">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0057">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F445">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8ffba666c8c4f17bb4fa3125633078d">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/synsem#OntoMap"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#denotes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">dui aan</rdfs:label>
+    <rdfs:label xml:lang="de">bezeichnet</rdfs:label>
+    <rdfs:label xml:lang="en">denotes</rdfs:label>
+    <rdfs:label xml:lang="es">denota</rdfs:label>
+    <rdfs:label xml:lang="fr">dénote</rdfs:label>
+    <rdfs:label xml:lang="it">denota</rdfs:label>
+    <rdfs:label xml:lang="nl">duidt aan</rdfs:label>
+    <rdfs:label xml:lang="pt">denota</rdfs:label>
+    <rdfs:label xml:lang="ro">denotă</rdfs:label>
+    <rdfs:label xml:lang="sv">betecknar</rdfs:label>
+    <rdfs:label xml:lang="ru">обозначает</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'denotes' property relates a lexical entry to a predicate in a given ontology that represents its meaning and has some denotational or model-theoretic semantics. </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'обозначает' связывает словарную единицу с предикатом в онтологии, который представляет ее значение и обладает денотативной или теоретико-модельной семантикой.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:propertyChainAxiom rdf:nodeID="N432133406e65429e93bb0baef97a9185"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F9B6">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#Texteme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A Texteme is a concept that models a generic written symbol. As such, it is a generalization of the "character". Depending on the actual properties and relations that a texteme consists of, it may represent a character, a glyph, a linguistic grapheme, all of these, or neither of these.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalEntry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">leksikale inskrywing</rdfs:label>
+    <rdfs:label xml:lang="de">Lexikoneintrag</rdfs:label>
+    <rdfs:label xml:lang="en">lexical entry</rdfs:label>
+    <rdfs:label xml:lang="es">entrada léxica</rdfs:label>
+    <rdfs:label xml:lang="fr">entrée lexicale</rdfs:label>
+    <rdfs:label xml:lang="it">entrata lessicale</rdfs:label>
+    <rdfs:label xml:lang="nl">lexikale eenheid</rdfs:label>
+    <rdfs:label xml:lang="ro">înregistrare lexicală</rdfs:label>
+    <rdfs:label xml:lang="sv">lexikoningång</rdfs:label>
+    <rdfs:label xml:lang="ru">словарная единица</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:nodeID="N69e1fda412f848baa749bc8f3a77b954"/>
+    <rdfs:subClassOf rdf:nodeID="N663b7e08d7dd4cdfa74f10683428b77e"/>
+    <rdfs:comment xml:lang="en">A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Словарная единица' представляет собой единицу анализа словаря, которая состоит из совокупности грамматически связанных форм и совокупности основных значений, ассоциирующихся со всеми этими формами. 'Словарная единица' - это слово, словосочетание или аффикс одной части речи, морфологической модели, этимологии и набора значений.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacterProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Unicode character properties are described by the Unicode Standard and are part of the Unicode Character Database.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#TextemeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#lexicalizedSense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">geleksikaliseerde Sin</rdfs:label>
+    <rdfs:label xml:lang="de">lexikalisierter Sinn</rdfs:label>
+    <rdfs:label xml:lang="en">lexicalized sense</rdfs:label>
+    <rdfs:label xml:lang="es">acepción lexicalizada</rdfs:label>
+    <rdfs:label xml:lang="fr">signification lexicalisé</rdfs:label>
+    <rdfs:label xml:lang="it">senso lessicalizzato</rdfs:label>
+    <rdfs:label xml:lang="nl">lexikale betekenis</rdfs:label>
+    <rdfs:label xml:lang="ro">sens lexicalizat</rdfs:label>
+    <rdfs:label xml:lang="sv">lexikaliserad betydelse</rdfs:label>
+    <rdfs:label xml:lang="ru">лексикализованный смысл</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'lexicalized sense' property relates a lexical concept to a corresponding lexical sense that lexicalizes the concept.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'лексикализованный смысл' связывает лексическое понятие с соответствующим лексическим смыслом, который лексикализует понятие.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/B.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1277"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/694212B746622E482E0E58D50036100E"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/270B"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/130A7"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004A"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂧</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">✋</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAND</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#MultiWordExpression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="af">multiwoorduitdrukking</rdfs:label>
+    <rdfs:label xml:lang="de">Mehrwortausdruck</rdfs:label>
+    <rdfs:label xml:lang="en">multi-word expression</rdfs:label>
+    <rdfs:label xml:lang="es">expresión multipalabra</rdfs:label>
+    <rdfs:label xml:lang="fr">expression à mots multiples</rdfs:label>
+    <rdfs:label xml:lang="it">espressione di gruppi di parole</rdfs:label>
+    <rdfs:label xml:lang="nl">meerwoordsuitdrukking</rdfs:label>
+    <rdfs:label xml:lang="ro">expresie din mai multe cuvinte</rdfs:label>
+    <rdfs:label xml:lang="sv">flerordsuttryck</rdfs:label>
+    <rdfs:label xml:lang="ru">словосочетание</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">A multiword expression is a lexical entry that consists of two or more words.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Словосочетание' - это словарная единица, состоящая из двух или более слов.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/L.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/628"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/03413638BD1DFC7AEF53192FEF71F017"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F341"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13114"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004C"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓄔</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🍁</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEAF</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#lexicalForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">leksikale vorm</rdfs:label>
+    <rdfs:label xml:lang="de">lexikalische Form</rdfs:label>
+    <rdfs:label xml:lang="en">lexical form</rdfs:label>
+    <rdfs:label xml:lang="es">forma léxica</rdfs:label>
+    <rdfs:label xml:lang="fr">forme lexicale</rdfs:label>
+    <rdfs:label xml:lang="it">forma lessicale</rdfs:label>
+    <rdfs:label xml:lang="nl">lexikale vorm</rdfs:label>
+    <rdfs:label xml:lang="ro">formă lexicală</rdfs:label>
+    <rdfs:label xml:lang="sv">lexikonform</rdfs:label>
+    <rdfs:label xml:lang="ru">лексическая форма</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'lexical form' property relates a lexical entry to one grammatical form variant of the lexical entry.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'лексическая форма' соотносит словарную единицу с одним вариантом грамматической формы словарной единицы.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0050">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#ConceptSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="de">Konzeptsatz</rdfs:label>
+    <rdfs:label xml:lang="en">concept set</rdfs:label>
+    <rdfs:label xml:lang="es">conjunto de conceptos</rdfs:label>
+    <rdfs:label xml:lang="fr">banque de conepts</rdfs:label>
+    <rdfs:label xml:lang="it">banca concetti</rdfs:label>
+    <rdfs:label xml:lang="nl">verzameling van begrippen</rdfs:label>
+    <rdfs:label xml:lang="ru">набор понятий</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="Ne3554aeaaae04070ae15b325a33c3c4d"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:comment xml:lang="en">A concept set represents a collection of lexical concepts.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">'Набор понятий' представляет собой совокупность лексических понятий.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/H.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1289"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/E7FBD92350B3CA8B7B5D77E36A607068"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F476"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13014"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0048"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓀔</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👶</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BABY</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/I.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/948"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/F0585BB57111C322D6E7DABB0D01F9EA"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F30A"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13217"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0049"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓈗</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌊</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WATER</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/O.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/221"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/5AC0158A367D59E8C16A876321E578AB"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F525"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/132AE"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004F"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓊮</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🔥</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIRE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N663b7e08d7dd4cdfa74f10683428b77e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#lexicalForm"/>
+    <owl:onClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.wikidata.org/wiki/Property:P898">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>Describes which IPA character/phoneme a real character corresponds to</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/N.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/744"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/E03DA215BAB0A158BA5D1CB5C4D5D6FD"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F95A"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13187"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004E"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆇</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🥚</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EGG</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#reference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="af">verwysing</rdfs:label>
+    <rdfs:label xml:lang="de">Referenz</rdfs:label>
+    <rdfs:label xml:lang="en">reference</rdfs:label>
+    <rdfs:label xml:lang="es">referencia</rdfs:label>
+    <rdfs:label xml:lang="fr">référence</rdfs:label>
+    <rdfs:label xml:lang="it">riferimento</rdfs:label>
+    <rdfs:label xml:lang="nl">referentie</rdfs:label>
+    <rdfs:label xml:lang="pt">referência</rdfs:label>
+    <rdfs:label xml:lang="ro">referință</rdfs:label>
+    <rdfs:label xml:lang="sv">referens</rdfs:label>
+    <rdfs:label xml:lang="ru">референция</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'reference' property relates a lexical sense to an ontological predicate that represents the denotation of the corresponding lexical entry. </rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'референция' соотносит лексический смысл с предикатом в онтологии, который уточняет значение денотата (соответствующей словарной единицы).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:nodeID="N33abfcd06c9d419ca6def51fc4e37392"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#isConceptOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="af">is konsep van</rdfs:label>
+    <rdfs:label xml:lang="de">ist Konzept von</rdfs:label>
+    <rdfs:label xml:lang="en">is concept of</rdfs:label>
+    <rdfs:label xml:lang="es">es concepto de</rdfs:label>
+    <rdfs:label xml:lang="fr">est un concept pour </rdfs:label>
+    <rdfs:label xml:lang="it">è concetto di </rdfs:label>
+    <rdfs:label xml:lang="nl">is begrip van</rdfs:label>
+    <rdfs:label xml:lang="pt">é conceito de</rdfs:label>
+    <rdfs:label xml:lang="ro">este concept a(l)</rdfs:label>
+    <rdfs:label xml:lang="sv">är begrepp för</rdfs:label>
+    <rdfs:label xml:lang="ru">является понятием</rdfs:label>
+    <rdfs:comment xml:lang="en">This property formalizes the meaning of a Lexical Concept by linking it to a particular ontological meaning.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Это свойство формализует значение 'Лексического Понятия', связывая его с отдельным значением в онтологии.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">concept scheme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/U.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1343"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/58EB693AE523323410326D60806B9ADF"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2600"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F3"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0055"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇳</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">☀️</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUN</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/synsem#OntoMap">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/M.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/239"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/5AE9663626770D1D4B97AAE5769AB83C"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F33C"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131B8"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004D"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆸</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌼</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLOWER</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/03413638BD1DFC7AEF53192FEF71F017">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/E.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1313"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/199408E3D0668F10F475143F0E8CC0CB"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F319"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131F9"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0045"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇹</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌙</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOON</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">meaning</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/ECC959553F23387998DAF88D69D7736C">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#usage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="de">Gebrauch</rdfs:label>
+    <rdfs:label xml:lang="en">usage</rdfs:label>
+    <rdfs:label xml:lang="es">uso</rdfs:label>
+    <rdfs:label xml:lang="fr">usage</rdfs:label>
+    <rdfs:label xml:lang="it">uso</rdfs:label>
+    <rdfs:label xml:lang="nl">gebruik</rdfs:label>
+    <rdfs:label xml:lang="ru">употребление</rdfs:label>
+    <rdfs:comment xml:lang="en">The 'usage' property indicates usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Свойство 'употребление' обозначает условия использования или прагматическое значение при употреблении словарной единицы для соотнесения с определенным значением в онтологии.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <vs:term_status>stable</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/199408E3D0668F10F475143F0E8CC0CB">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/R.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/906"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/5D1D7FB69E1A3C0C60001FBC0C19ED87"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F333"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131AD"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0052"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓆭</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🌳</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TREE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.wikidata.org/wiki/Property:P11473">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:comment>Describes which concept set in the CLLD concepticon a Real Character belongs to</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa2c64b3d94748dcaafce0d785236fa5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#isSenseOf"/>
+    <owl:onClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F444">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/9E7CDEEE9F0DE43C10181AE483F62CBD">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/J.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1489"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/ADF56B8E4119266843033E723A149AE2"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/2601"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/131EF"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/004A"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓇯</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">☁️</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLOUD</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4dbd64241a1148359a7778ebafc7088f">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#sense"/>
+    <rdf:rest rdf:nodeID="N5c542adc72834942ac110d9a5184a866"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131EF">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13079">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/Y.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/639"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/8A61A9B6039DB852CE150BEC6198AFE5"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/26F0"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13209"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0059"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓈉</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">⛰️</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOUNTAIN</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004B">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7e8671296fc44d3a6c9be2a87de403c">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdf:rest rdf:nodeID="Na8ffba666c8c4f17bb4fa3125633078d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13088">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131F3">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F30A">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004A">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/1AD6D96C35E6ADA62F1EAF5B167F75F7">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/C.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1303"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/1348048F53951A5E29ABA6D5360925BA"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F446"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/130B7"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0043"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂷</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👆</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FINGER</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">in scheme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13089">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F442">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/V.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/683"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/9E7CDEEE9F0DE43C10181AE483F62CBD"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F9CD"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13050"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0056"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓁐,𓀀</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">🧍</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13114">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1319B">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1312F">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13014">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004C">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F420">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0046">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#describesUnicodeCharacter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme"/>
+    <owl:inverseOf rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#hasUnicodeCharacterProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/G.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/1221"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/ECC959553F23387998DAF88D69D7736C"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F443"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/13089"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0047"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂉</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👃</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOSE</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/9F90F95459807624A486F03FE5A89978">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Here we define the basic concepts used by the Unicode Ontology.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This ontology is currently under active development, changes are still frequent.</rdfs:comment>
+    <owl:versionInfo>0.6.2</owl:versionInfo>
+    <owl:imports rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl"/>
+    <owl:imports rdf:resource="http://purl.org/textontology/texteme/sequence.owl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#hasMetaTextProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#TextProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/26F0">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004E">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69e1fda412f848baa749bc8f3a77b954">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#canonicalForm"/>
+    <owl:onClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/2601">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0059">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/D.png">
+    <rdf:type rdf:resource="http://realcharacterlanguage.world/horapollo/RealCharacter"/>
+    <ns1:P11473 rdf:resource="https://concepticon.clld.org/parameters/674"/>
+    <ns1:P898 rdf:resource="https://phoible.org/parameters/E6253384902D489FDB1FE487B7ED4AB2"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1F444"/>
+    <describesUnicodeCharacter rdf:resource="http://purl.org/textontology/unicode/char/1308B"/>
+    <texteme:describesTexteme rdf:resource="http://purl.org/textontology/unicode/char/0044"/>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">𓂋</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">👄</hrp:Name>
+    <hrp:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOUTH</hrp:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131FD">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3554aeaaae04070ae15b325a33c3c4d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Ncf2d4640843b42c8b16485ce933c4960"/>
+    <owl:onClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#describesTexteme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#hasTextemeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/26A1">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F441">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/86E80A7DA80F7F58CA76F85BACA48F86">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/2D6FB64B3CDC3549EF11DB98A66A9EAD">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/5AE9663626770D1D4B97AAE5769AB83C">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13184">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13187">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13209">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/5D1D7FB69E1A3C0C60001FBC0C19ED87">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0045">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/F0585BB57111C322D6E7DABB0D01F9EA">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/E7FBD92350B3CA8B7B5D77E36A607068">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://realcharacterlanguage.world/horapollo/RealCharacter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131F0">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0051">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0043">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#hasUnicodeCharacterProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#hasTextemeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/5A838FF4DABE1950734CFAFAB9383903">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/941ED37AAF5E9C4E1B40D85008C6B2D9">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wikidata.org/wiki/Property:P898">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c542adc72834942ac110d9a5184a866">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33abfcd06c9d419ca6def51fc4e37392">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Na4644916c69c4799bba4a4a124d333a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F9CD">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/2B50">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/7FF174469DAC4E61520F4E1610B2F088">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/130C0">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0053">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/uo_core.owl#UnicodeSequence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/textontology/texteme/sequence.owl#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F33C">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocommons/voaf#Vocabulary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F476">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0049">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F443">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#hasTextProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13143">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4644916c69c4799bba4a4a124d333a9">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdf:rest rdf:nodeID="N2804519808714176b86aa4399de95343"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/ADF56B8E4119266843033E723A149AE2">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131AD">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/501394D0E2658752D9DA624E7DEBE14B">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0056">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/texteme/texteme_core.owl#TextProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A TextProperty is a property or relation that describes an element of digital text: a Texteme, a SequenceElement, or a Sequence.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/8A61A9B6039DB852CE150BEC6198AFE5">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0058">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F525">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131B8">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0044">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0048">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1308B">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004F">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2804519808714176b86aa4399de95343">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/synsem#OntoMap"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90210a7c02d84aedb98744b4f2eeab49">
+    <rdf:first rdf:resource="http://www.w3.org/ns/lemon/ontolex#reference"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wikidata.org/wiki/Property:P11473">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0052">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/694212B746622E482E0E58D50036100E">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/72FB536ACFF408163656BBCDAFCAC6F6">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/58EB693AE523323410326D60806B9ADF">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://phoible.org/parameters/5AC0158A367D59E8C16A876321E578AB">
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/005A">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13113">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13050">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1FAB6">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0055">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/0041">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/130B7">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F9B4">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F341">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf2d4640843b42c8b16485ce933c4960">
+    <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/1F95A">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/131F9">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/004D">
+    <rdf:type rdf:resource="http://purl.org/textontology/texteme/texteme_core.owl#Texteme"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncff4d8f70caa418ab221964b3076d277">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nd7e8671296fc44d3a6c9be2a87de403c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/13217">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/132AE">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/2600">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/textontology/unicode/char/130A7">
+    <rdf:type rdf:resource="http://purl.org/textontology/unicode/uo_core.owl#UnicodeCharacter"/>
+  </rdf:Description>
+</rdf:RDF>
